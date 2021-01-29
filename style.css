@@ -1,0 +1,239 @@
+/* Mauve: #b49cc494 */
+
+* {
+  text-decoration: none;
+}
+
+/* Fade in */
+.container {
+  animation: fadeIn ease .5s;
+  -webkit-animation: fadeIn ease .5s;
+  -moz-animation: fadeIn ease .5s;
+  -o-animation: fadeIn ease .5s;
+  -ms-animation: fadeIn ease .5s;
+  }
+  @keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+  }
+  
+  @-moz-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+  }
+  
+  @-webkit-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+  }
+  
+  @-o-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+  }
+  
+  @-ms-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+  }
+
+body {
+  background-color: rgba(233, 229, 222, 0.822);
+}
+
+h1 {
+  display: inline-block;
+  -webkit-text-stroke: 1px black;
+  color: transparent;
+  transition: all .25s;
+  font-size: 85px;
+  text-align: center;
+}
+
+h1:hover {
+  color: black;
+  cursor: pointer;
+}
+
+h1 a {
+  display: inline-block;
+  -webkit-text-stroke: 1px black;
+  color: transparent;
+  transition: all .25s;
+  font-size: 85px;
+  text-align: center;
+  text-decoration: none;
+}
+
+h1 a:hover {
+  color: black;
+  cursor: pointer;
+}
+
+h1 a:link {
+  text-decoration: none;
+}
+
+h3 {
+  text-align: center;
+  -webkit-text-stroke: 1px black;
+  color: transparent;
+  transition: all .25s;
+  font-size: 35px;
+}
+
+h3:hover {
+  color: black;
+  cursor: pointer;
+}
+
+.card {
+  width: 40rem;
+  height: 26rem;
+  background: #e96443;
+  background: -webkit-linear-gradient(to top, #904e95, #e96443);
+  background: linear-gradient(to top, #904e95, #e96443);
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  text-align: center;
+  position: relative;
+  top: 2.25rem;
+}
+
+.card:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+
+/* Burger Nav Bar */
+
+.burger {
+  display: block;
+  position: absolute;
+  right: .5em;;
+  top: 1em;
+  cursor: pointer;
+  z-index: 998;
+ }
+ 
+ .burger div {
+ width: 50px;
+ height: 2px;
+ background-color: black;
+ margin: 10px;
+ transition: all 0.5s ease;
+ }
+ 
+ .nav-links {
+  position: absolute;
+  right: -2px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  transform: translateY(-135%);
+  transition: transform 0.4s ease-in;
+  list-style: none;
+  padding-top: 3rem;
+  border-radius: 10px;
+  justify-content: space-around;
+  z-index: 997;
+     }
+ 
+ .nav-links a {
+   color: rgb(0, 0, 0);
+   text-decoration: none;
+   font-size: 15px;
+   transition: color 250ms ease-in-out;
+   margin-top: 20px;
+   text-align: center;
+   -webkit-text-stroke: 1px black;
+   color: transparent;
+   transition: all .25s;
+   font-size: 50px;
+     }
+ 
+ .nav-links a:hover { color: #000000; }
+    
+ .nav-active { transform: translateY(-15%); }
+   
+ .toggle .line1 { transform: rotate(-45deg) translate(-11px, 6px); }
+ .toggle .line2 { opacity: 0; }
+ .toggle .line3 { transform: rotate(45deg) translate(-9.5px, -6px); }
+
+
+ /* Main Nav Bar hidden until 768px breakpoint */
+
+ nav .main-nav-links {
+   display: none;
+ }
+
+ /* About Page */
+
+ .container {
+   text-align: center;
+ }
+
+.container p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+}
+
+.container p a {
+  color: #000000;
+  cursor: pointer;
+  transition: all .15s ease-in-out;
+  font-size: 1.5rem;
+}
+
+.container p a:hover { color: #ede9f0; }
+
+
+.intro-text { animation: rotation 30s infinite linear;} 
+
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+
+ /* Portfolio Page */
+
+ .container img {
+   height: 12rem;
+   width: 100%;
+   border-radius: 3px;
+   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+   transition: all 0.5s cubic-bezier(.25,.8,.25,1);
+   text-align: center;
+ }
+
+ .container img:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  cursor: pointer;
+}
+
+ .col-sm {  margin-top: 50px; }
+
+ .col-sm a { font-size: 2.75rem; }
+
+ .col-sm h5,
+ .col-sm h5 a {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.877);
+  text-decoration: none;
+  transition: all .2s ease-in-out;
+}
+
+.col-sm h5 a:hover {
+color:rgb(255, 255, 255);
+}

@@ -1,0 +1,69 @@
+/* Hamburger -- Tablet and smaller */
+
+@media (min-width: 768px) {
+
+  /* Burger Nav Bar hides at 768px breakpoint) */
+  .burger div, 
+  .nav-links {
+    display: none;
+  }
+
+
+ /* Main Nav Bar shows at 768px breakpoint */
+
+ .main-nav ul {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 100;
+  font-size: 17.5px;
+  position: absolute;
+  right: 2px;
+  display: flex;
+  flex-direction: row;
+ }
+
+ .main-nav li {
+ list-style: none;
+ margin: 7.5px;
+ }
+
+ .main-nav li a {
+ display: inline-block;
+ text-decoration: none;
+ color: black;
+ font-size: 1.25rem;
+ }
+
+
+ .main-nav li a:hover { color: black; }
+
+ .main-nav li a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #000;
+    transition: width .3s;
+  }
+  
+  .main-nav li a:hover::after { width: 100%; }
+
+  /* About 
+
+  .back-button li { 
+  display: inline-block;
+  text-decoration: none;
+list-style: none;
+  }
+
+  .back-button a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #000;
+    transition: width .3s;
+  }
+  
+  .back-button a:hover::after { width: 100%; }
+*/
+}

@@ -7,15 +7,16 @@
 
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
 
-  /* Burger Nav Bar hides at 768px breakpoint) */
-  nav {
+  /* Burger Nav Bar hides at 768px breakpoint)  */ 
+  .burger {
     display: none;
   }
 
 
  /* Main Nav Bar shows at 768px breakpoint */
+
 
  .main-nav ul {
   font-family: 'Poppins', sans-serif;

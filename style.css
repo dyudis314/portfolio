@@ -12,6 +12,7 @@
   -o-animation: fadeIn ease .5s;
   -ms-animation: fadeIn ease .5s;
   }
+
   @keyframes fadeIn {
   0% {opacity:0;}
   100% {opacity:1;}
@@ -75,8 +76,9 @@ h1 a:link {
   text-decoration: none;
 }
 
-ion-icon { display: none; }
-
+.title-text {
+  margin-top: 1.25rem;
+}
 
 h3 {
   text-align: center;
@@ -93,21 +95,22 @@ h3:hover {
 
 .card {
   width: 90%;
-  height: 26rem;
+  height: 22rem;
+  top: 8vh;
   background: #e96443;
   background: -webkit-linear-gradient(to top, #904e95, #e96443);
   background: linear-gradient(to top, #904e95, #e96443);
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
   transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-  text-align: center;
-  position: relative;
-  bottom: .2vh;
 }
 
 .card:hover {
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
+.card-body {
+  justify-content: center;
+}
 
 /* Burger Nav Bar */
 
@@ -115,8 +118,8 @@ h3:hover {
 .burger {
   display: block;
   position: absolute;
-  right: .3em;;
-  top: .3em;
+  right: .25em;
+  top: .25em;
   cursor: pointer;
   z-index: 998;
  }
@@ -237,9 +240,9 @@ h3:hover {
  .col-sm h5,
  .col-sm h5 a {
   font-family: 'Poppins', sans-serif;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 300;
-  color: rgba(0, 0, 0, 0.877);
+  color: rgb(0, 0, 0);
   text-decoration: none;
   transition: all .2s ease-in-out;
 }

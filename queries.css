@@ -7,13 +7,20 @@
 
 }
 
+
+@media (min-width: 450px) {
+  ion-icon { 
+    display: inline-block;
+    font-size: 2.8rem; 
+  }
+}
+
+
+
 @media (min-width: 769px) {
 
   /* Burger Nav Bar hides at 768px breakpoint)  */ 
-  .burger {
-    display: none;
-  }
-
+  .burger { display: none; }
 
  /* Main Nav Bar shows at 768px breakpoint */
 

@@ -6,6 +6,7 @@ const navSlide = () => {
   const navLinks = document.querySelectorAll('.nav links li');
   
     // When burger is clicked, nav-active class is toggled on/off.
+  if (burger) {
   burger.addEventListener('click', () => {
     nav.classList.toggle('nav-active');
   
@@ -14,13 +15,16 @@ const navSlide = () => {
   
       });
     }
+  }
   navSlide();
   
   /* Reload on hero text box click */
+  const hero = document.querySelector('.hero-text-box');
    function reloadOnClick() {
-    const hero = document.querySelector('.hero-text-box');
+     if (hero) {
     hero.addEventListener('click', () => {
       location.reload();
-    })
-   }
+        })
+      }
+    }
    reloadOnClick();
